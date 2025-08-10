@@ -1,0 +1,260 @@
+:: Startup [startup]
+(set: $Empathy to 0)
+(set: $Imagination to 0)
+(set: $ProblemSolving to 0)
+(set: $StrategicThinking to 0)
+(set: $Exploration to 0)
+
+
+:: Question1
+Which document shows the most active effort to protect future generations?
+
+(link: "The CDC memo, with its clear and immediate medical guidance.")[
+  (set: $ProblemSolving to $ProblemSolving + 1)
+  (go-to: "Question2")
+]
+
+(link: "The personal journal, capturing emotional survival strategies and memory.")[
+  (set: $Empathy to $Empathy + 1)
+  (go-to: "Question2")
+]
+
+(link: "The Reddit page, where people share fragmented clues and situational updates.")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "Question2")
+]
+
+(link: "The computational poem, blending past literature with present fears.")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "Question2")
+]
+
+
+
+:: Question2
+Which document made you feel the strongest emotional connection?
+
+(link: "The corporate memo—it's chilling how people manage damage control under pressure.")[
+  (set: $StrategicThinking to $StrategicThinking + 1)
+  (go-to: "Question3")
+]
+
+(link: "The personal journal—its raw, reflective writing and family bonds were deeply moving.")[
+  (set: $Empathy to $Empathy + 1)
+  (go-to: "Question3")
+]
+
+(link: "The cooking zine—its tactile, handmade feel suggested love and care.")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "Question3")
+]
+
+(link: "The Reddit thread—seeing panic and humanity unfold in real time was gripping.")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "Question3")
+]
+
+
+
+:: Question3
+Which source did you find most difficult to trust, and why?
+
+(link: "The corporate memo—it feels evasive, more interested in image than truth.")[
+  (set: $StrategicThinking to $StrategicThinking + 1)
+  (go-to: "Question4")
+]
+
+(link: "The Reddit posts—too chaotic and unverifiable, though urgent.")[
+  (set: $ProblemSolving to $ProblemSolving + 1)
+  (go-to: "Question4")
+]
+
+(link: "The computational poem—artificial intelligence remixing history raises questions.")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "Question4")
+]
+
+(link: "The CDC memo—official, but I wonder what might be left unsaid.")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "Question4")
+]
+
+
+
+:: Question4
+How did the design of the “Survival Cooking” zine shape your perception of the content?
+
+(link: "It felt like a cultural artifact—meant to preserve something meaningful.")[
+  (set: $Empathy to $Empathy + 1)
+  (go-to: "Question5")
+]
+
+(link: "The collage and visuals sparked a sense of creative resilience.")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "Question5")
+]
+
+(link: "It provided simple, practical solutions with accessible ingredients.")[
+  (set: $ProblemSolving to $ProblemSolving + 1)
+  (go-to: "Question5")
+]
+
+(link: "It made me curious to learn more about foraging and food systems.")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "Question5")
+]
+
+
+
+:: Question5
+What role does the computational poem project seem to play?
+
+(link: "It preserves a literary legacy by adapting it to contemporary fears.")[
+  (set: $StrategicThinking to $StrategicThinking + 1)
+  (go-to: "Question6")
+]
+
+(link: "It expresses human emotion through code—almost hauntingly.")[
+  (set: $Empathy to $Empathy + 1)
+  (go-to: "Question6")
+]
+
+(link: "It creatively reimagines traditional poetry through data.")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "Question6")
+]
+
+(link: "It raises questions about AI’s place in shaping future cultural memory.")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "Question6")
+]
+
+
+
+:: Question6
+If you had to preserve one of these documents in a time capsule, which would you choose?
+
+(link: "The CDC memo—future generations need practical survival knowledge.")[
+  (set: $ProblemSolving to $ProblemSolving + 1)
+  (go-to: "Question7")
+]
+
+(link: "The personal journal—it captures lived experience with emotional honesty.")[
+  (set: $Empathy to $Empathy + 1)
+  (go-to: "Question7")
+]
+
+(link: "The computational poem—an artistic echo of crisis and creativity.")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "Question7")
+]
+
+(link: "The Reddit thread—a chaotic but fascinating snapshot of real-time collective response.")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "Question7")
+]
+
+
+
+:: Question7
+Which document most clearly reveals how fragile our systems can be?
+
+(link: "The Reddit thread—it shows the breakdown of communication and trust.")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "Question8")
+]
+
+(link: "The CDC memo—the body’s collapse under radiation exposure is terrifying.")[
+  (set: $ProblemSolving to $ProblemSolving + 1)
+  (go-to: "Question8")
+]
+
+(link: "The journal—reveals the emotional fragility of survivors, especially children.")[
+  (set: $Empathy to $Empathy + 1)
+  (go-to: "Question8")
+]
+
+(link: "The computational poem—technology reinterpreting crisis signals instability.")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "Question8")
+]
+
+
+
+:: Question8
+Which document best reflects cooperation and mutual support?
+
+(link: "The zine—people sharing survival knowledge in artistic, accessible ways.")[
+  (set: $Empathy to $Empathy + 1)
+  (go-to: "Question9")
+]
+
+(link: "The Reddit thread—crowdsourcing help in real time.")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "Question9")
+]
+
+(link: "The CDC memo—organized response through science and policy.")[
+  (set: $StrategicThinking to $StrategicThinking + 1)
+  (go-to: "Question9")
+]
+
+(link: "The journal—the quiet gestures of care in a chaotic world.")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "Question9")
+]
+
+
+
+:: Question9
+Which document left you most curious to investigate further?
+
+(link: "The Reddit page—what else happened in that unfolding situation?")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "Question10")
+]
+
+(link: "The computational poem—how was it generated? What does it mean?")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "Question10")
+]
+
+(link: "The CDC memo—what historical events triggered this release?")[
+  (set: $StrategicThinking to $StrategicThinking + 1)
+  (go-to: "Question10")
+]
+
+(link: "The corporate memo—what truths are hidden behind the redactions?")[
+  (set: $ProblemSolving to $ProblemSolving + 1)
+  (go-to: "Question10")
+]
+
+
+
+:: Question10
+If you could ask one of the authors or creators a question, whom would you choose?
+
+(link: "The child from the journal—I want to know more about their experiences.")[
+  (set: $Empathy to $Empathy + 1)
+  (go-to: "End")
+]
+
+(link: "The coder-poet—I’d love to understand their process and intentions.")[
+  (set: $Imagination to $Imagination + 1)
+  (go-to: "End")
+]
+
+(link: "The person who assembled the zine—how did they learn these recipes?")[
+  (set: $Exploration to $Exploration + 1)
+  (go-to: "End")
+]
+
+(link: "The CDC scientist—how are crises like these predicted and addressed?")[
+  (set: $StrategicThinking to $StrategicThinking + 1)
+  (go-to: "End")
+]
+
+
+
+:: End
+Thanks for completing the questionnaire!
